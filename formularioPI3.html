@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Produto - Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				background-color: #3A3A3A
+			}
+			h1, h2{
+				font: italic;
+				font-family: Times;
+				color: #FFFFFF;
+				
+			}
+			#form{
+				
+				border-style: double
+			}
+			input[type="text"]{
+				background: #3A3A3A;
+				border: #5B5B5B 2px;
+				border-style: solid;
+				height: 23px;
+				width: 250px;
+			}
+			label{
+				font-family: Times New Roman;
+				font-size: 17px;	
+				
+				
+			}
+			textarea{
+				
+				background: #3A3A3A;
+				border: #5B5B5B 2px;
+				border-style: solid;
+			}
+			form{
+				width: 50%;
+				align-content: center;
+				
+			}
+		
+		
+		
+		
+		
+		
+		
+		</style>
+    </head>
+    <body>
+        <h1>Produto</h1>
+        <h2>Inclusão</h2>
+        <div id="form">
+            <form>
+				<br>
+                <div>
+                    &nbsp;<label>Nome</label>
+                    <div>
+                        &nbsp;<input type="text" />
+                    </div>
+                </div>
+				<br>
+                <div>
+                    &nbsp;<label>Descrição</label>
+                    <div>
+                        &nbsp;<textarea></textarea>
+                    </div>
+                </div>
+				<br>
+                <div>
+                    &nbsp;<label>Quantidade</label>
+                    <div>
+                        &nbsp;<input type="text" />
+                    </div>
+                </div>
+				<br>
+                <div>
+                    &nbsp;<label>Preço compra</label>
+                    <div>
+                        &nbsp;<input type="text" />
+                    </div>
+                </div>
+				<br>
+                <div>
+                    &nbsp;<label>Preço venda</label>
+                    <div>
+                        &nbsp;<input type="text" />
+                    </div>
+                </div>
+				<br>
+                <fieldset>
+                    &nbsp;<legend>Categorias</legend>
+                    <input type="checkbox" value="A" /> <label>Categoria A</label>
+                    <input type="checkbox" value="B" /> <label>Categoria B</label>
+                    <input type="checkbox" value="C" /> <label>Categoria C</label>
+                </fieldset>
+				<br>
+                &nbsp;<button type="submit">Salvar</button>
+                &nbsp;&nbsp;<button type="reset">Resetar</button>
+				<br>
+				<br>
+            </form>
+
+        </div>
+    </body>
+</html>
