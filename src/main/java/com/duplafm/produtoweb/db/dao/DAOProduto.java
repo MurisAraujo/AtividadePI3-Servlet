@@ -19,7 +19,7 @@ public class DAOProduto {
     public static void inserir(Produto produto)
             throws SQLException, Exception{
         String sql = "INSERT INTO Produto (nome, descricao, genero, quantEst, "
-                + "precoVenda, precoCOmpra) VALUES (?,?,?,?,?,?)";
+                + "precoVenda, precoCompra) VALUES (?,?,?,?,?,?)";
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try{
@@ -27,10 +27,10 @@ public class DAOProduto {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, produto.getNome());
             preparedStatement.setString(2, produto.getDescricao());
-            preparedStatement.setString(3, produto.getGenero());
-            preparedStatement.setInt(4, produto.getQuantidadeEstoque());
-            preparedStatement.setDouble(5, produto.getPrecoVenda());
-            preparedStatement.setDouble(6, produto.getPrecoCompra());
+            preparedStatement.setArray(3, produto.getCategorias());
+            preparedStatement.setInt(4, produto.getQuantidade());
+            preparedStatement.setBigDecimal(5, produto.getPrecoVenda());
+            preparedStatement.setBigDecimal(6, produto.getPrecoCompra());
             
             preparedStatement.execute();
         }finally{
