@@ -42,7 +42,7 @@ public class InclusaoProdutoServlet extends HttpServlet {
         String precoVendaStr = request.getParameter("prvenda");
         String qtdStr = request.getParameter("qtd");
         String dispStr = request.getParameter("disp");
-        String[] categorias = request.getParameterValues("cat");
+        String categorias = request.getParameter("cat");
 
         BigDecimal precoCompra = new BigDecimal(precoCompraStr);
         BigDecimal precoVenda = new BigDecimal(precoVendaStr);

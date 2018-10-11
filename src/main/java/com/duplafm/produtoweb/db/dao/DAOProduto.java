@@ -27,7 +27,7 @@ public class DAOProduto {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, produto.getNome());
             preparedStatement.setString(2, produto.getDescricao());
-            preparedStatement.setArray(3, produto.getCategorias());
+            preparedStatement.setString(3, produto.getCategorias());
             preparedStatement.setInt(4, produto.getQuantidade());
             preparedStatement.setBigDecimal(5, produto.getPrecoVenda());
             preparedStatement.setBigDecimal(6, produto.getPrecoCompra());

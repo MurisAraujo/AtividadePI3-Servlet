@@ -22,12 +22,12 @@ public class Produto {
     
     private int disponivel;
     
-    private String[] categorias;
+    private String categorias;
 
     public Produto() {
     }
 
-    public Produto(String nome, String descricao, BigDecimal precoCompra, BigDecimal precoVenda, int quantidade, int disponivel, String[] categorias) {
+    public Produto(String nome, String descricao, BigDecimal precoCompra, BigDecimal precoVenda, int quantidade, int disponivel, String categorias) {
         this.nome = nome;
         this.descricao = descricao;
         this.precoCompra = precoCompra;
@@ -93,11 +93,11 @@ public class Produto {
         this.disponivel = disponivel;
     }
 
-    public String[] getCategorias() {
+    public String getCategorias() {
         return categorias;
     }
 
-    public void setCategorias(String[] categorias) {
+    public void setCategorias(String categorias) {
         this.categorias = categorias;
     }
 
